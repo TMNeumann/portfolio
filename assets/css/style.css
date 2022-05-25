@@ -67,7 +67,6 @@ body {
 .img {
     max-width: 300px;
     min-height: 300px;
-    outline: solid 4px;
     border-radius: 50%;
     overflow: hidden;
 }
