@@ -1,5 +1,5 @@
 {
-  "name": "portfolio",
+  "name": "solarsystem",
   "version": "1.0.0",
   "description": "a portfolio",
   "main": "index.js",
@@ -7,5 +7,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "TNDev",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TMNeumann/solarsystem.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TMNeumann/solarsystem/issues"
+  },
+  "homepage": "https://github.com/TMNeumann/solarsystem#readme"
 }
