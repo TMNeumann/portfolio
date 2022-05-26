@@ -14,11 +14,12 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <script>
         window.onload = () => {
-            const menu = document.querySelector('.menu');
-            const openMenu = document.querySelector('.open-menu');
+            const menu = document.querySelector('.menu')
+            const openMenu = document.querySelector('.open-menu')
+            const anchors = document.querySelectorAll('.menu a')
             
             openMenu.addEventListener('click', (event) => {
-                event.preventDefault();
+                event.preventDefault()
                 if (menu.classList.contains('hidden-menu')) {
                     menu.classList.remove('hidden-menu')
                 } else {
@@ -30,6 +31,11 @@
                     }
                 })
             }) 
+            anchors.forEach(el => {
+                el.addEventListener('click', () => {
+                    menu.classList.add('hidden-menu')
+                })
+            })
         }
     </script>  
 </head>
@@ -99,6 +105,35 @@
         <div class="container dark">
             <ul class="samples">
                 <li>
+                    <div id="ss-carousel" class="carousel">
+                        <div class="img-box">
+                            <img src="assets/img/ss/1.jpg">
+                            <img src="assets/img/ss/2.jpg">
+                            <img src="assets/img/ss/3.png">
+                            <img src="assets/img/ss/4.png">
+                            <img src="assets/img/ss/5.png">
+                            <img src="assets/img/ss/6.png">
+                            <img src="assets/img/ss/7.png">
+                        </div>
+                        <a class="prev" onclick="plusSlides(-1, 'ss-carousel')">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1, 'ss-carousel')">&#10095;</a>
+                        <div class="carousel-controlers">
+                            <span class="dot" onclick="currentSlide(1, 'ss-carousel')"></span>
+                            <span class="dot" onclick="currentSlide(2, 'ss-carousel')"></span>
+                            <span class="dot" onclick="currentSlide(3, 'ss-carousel')"></span>
+                            <span class="dot" onclick="currentSlide(4, 'ss-carousel')"></span>
+                            <span class="dot" onclick="currentSlide(5, 'ss-carousel')"></span>
+                            <span class="dot" onclick="currentSlide(6, 'ss-carousel')"></span>
+                            <span class="dot" onclick="currentSlide(7, 'ss-carousel')"></span>
+                        </div>
+                    </div>
+                    <div class="description">
+                        <p class="title">Sistema Solar</p>
+                        <p>Uma simples landPage sobre o sistema solar</p>
+                        <a href="">Repository</a>
+                    </div>
+                </li>
+                <li>
                     <div id="srf-carousel" class="carousel ">
                         <div class="img-box">
                             <img id="img1" src="assets/img/srr/1.png">
@@ -137,35 +172,6 @@
                         <a href="">Repository</a>
                     </div>
                 </li> 
-                <li>
-                    <div id="ss-carousel" class="carousel">
-                        <div class="img-box">
-                            <img src="assets/img/ss/1.jpg">
-                            <img src="assets/img/ss/2.jpg">
-                            <img src="assets/img/ss/3.png">
-                            <img src="assets/img/ss/4.png">
-                            <img src="assets/img/ss/5.png">
-                            <img src="assets/img/ss/6.png">
-                            <img src="assets/img/ss/7.png">
-                        </div>
-                        <a class="prev" onclick="plusSlides(-1, 'ss-carousel')">&#10094;</a>
-                        <a class="next" onclick="plusSlides(1, 'ss-carousel')">&#10095;</a>
-                        <div class="carousel-controlers">
-                            <span class="dot" onclick="currentSlide(1, 'ss-carousel')"></span>
-                            <span class="dot" onclick="currentSlide(2, 'ss-carousel')"></span>
-                            <span class="dot" onclick="currentSlide(3, 'ss-carousel')"></span>
-                            <span class="dot" onclick="currentSlide(4, 'ss-carousel')"></span>
-                            <span class="dot" onclick="currentSlide(5, 'ss-carousel')"></span>
-                            <span class="dot" onclick="currentSlide(6, 'ss-carousel')"></span>
-                            <span class="dot" onclick="currentSlide(7, 'ss-carousel')"></span>
-                        </div>
-                    </div>
-                    <div class="description">
-                        <p class="title">Sistema Solar</p>
-                        <p>Uma simples landPage sobre o sistema solar</p>
-                        <a href="">Repository</a>
-                    </div>
-                </li>
             </ul>
         </div>
     </section>
