@@ -97,7 +97,7 @@
     </section>
     <section id="portfolio">
         <div class="container dark">
-            <ul class="grid">
+            <ul class="samples">
                 <li>
                     <div id="srf-carousel" class="carousel ">
                         <div class="img-box">
@@ -134,6 +134,35 @@
                     <div class="description">
                         <p class="title">Sistema de Agendamento</p>
                         <p>Um sistema web em Html5/JavaScript com NodeJs, banco em MySql, utilizando alguns frameworks de back end, como Passport, Express, Ejs, Sequelize</p>
+                        <a href="">Repository</a>
+                    </div>
+                </li> 
+                <li>
+                    <div id="ss-carousel" class="carousel">
+                        <div class="img-box">
+                            <img src="assets/img/ss/1.jpg">
+                            <img src="assets/img/ss/2.jpg">
+                            <img src="assets/img/ss/3.png">
+                            <img src="assets/img/ss/4.png">
+                            <img src="assets/img/ss/5.png">
+                            <img src="assets/img/ss/6.png">
+                            <img src="assets/img/ss/7.png">
+                        </div>
+                        <a class="prev" onclick="plusSlides(-1, 'ss-carousel')">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1, 'ss-carousel')">&#10095;</a>
+                        <div class="carousel-controlers">
+                            <span class="dot" onclick="currentSlide(1, 'ss-carousel')"></span>
+                            <span class="dot" onclick="currentSlide(2, 'ss-carousel')"></span>
+                            <span class="dot" onclick="currentSlide(3, 'ss-carousel')"></span>
+                            <span class="dot" onclick="currentSlide(4, 'ss-carousel')"></span>
+                            <span class="dot" onclick="currentSlide(5, 'ss-carousel')"></span>
+                            <span class="dot" onclick="currentSlide(6, 'ss-carousel')"></span>
+                            <span class="dot" onclick="currentSlide(7, 'ss-carousel')"></span>
+                        </div>
+                    </div>
+                    <div class="description">
+                        <p class="title">Sistema Solar</p>
+                        <p>Uma simples landPage sobre o sistema solar</p>
                         <a href="">Repository</a>
                     </div>
                 </li>
@@ -198,6 +227,7 @@
         let slideIndex = 1;
         showSlides(slideIndex, 'sa-carousel');
         showSlides(slideIndex, 'srf-carousel');
+        showSlides(slideIndex, 'ss-carousel');
 
         // Next/previous controls
         function plusSlides(n, carousel) {
