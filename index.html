@@ -30,6 +30,12 @@
                         menu.classList.add('hidden-menu');
                     }
                 })
+                body.addEventListener('pointerdown', (event) => {
+                    const eventMenu = event.target.closest('.menu')
+                    if (!eventMenu) {
+                        menu.classList.add('hidden')
+                    }
+                }, false)
             }) 
             anchors.forEach(el => {
                 el.addEventListener('click', () => {
