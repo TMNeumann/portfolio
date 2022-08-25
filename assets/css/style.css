@@ -257,6 +257,19 @@ h3 {
     text-align: center;
     margin-bottom: 1em;
 }
+.tools {
+    display: flex;
+}
+.tools a {
+    display: block;
+    max-width: 120px;
+    text-align: center;
+    margin: 15px;
+}
+.tools a img {
+    height: 40px;
+    margin: 10px auto;
+}
 footer {
 	width: 100%;
 	padding: 2em;
