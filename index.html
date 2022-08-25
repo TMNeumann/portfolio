@@ -71,7 +71,7 @@
                 <img src="https://avatars.githubusercontent.com/u/45356675?v=2">
             </div>
             <div class="description">
-                <p class="text">Meu nume é Thyago Neumann, <br>Analista de TI <br>desenvolvedor web e <br>entusiasta de programação de jogos</p>
+                <p class="text">Meu nume é Thyago Neumann, <br>Analista de TI <br>Desenvolvedor web e <br>Entusiasta de programação de jogos</p>
             </div>
             <ul class="social">
                 <li class="linkedin">
@@ -135,7 +135,7 @@
                     </div>
                     <div class="description">
                         <p class="title">Sistema Solar</p>
-                        <p>Uma simples landPage sobre o sistema solar</p>
+                        <p>Uma simples página mostrando as belezas sobre o sistema solar</p>
                     </div>
                 </li>
                 <li>
@@ -169,7 +169,38 @@
                     </div>
                     <div class="description">
                         <p class="title">Sistema de reserva de Refeições</p>
-                        <p>Um sistema em JavaScript com NodeJs, banco em MySql, utilizando alguns frameworks de back end, como Passport, Express, Ejs, Sequelize</p>
+                        <p>Um sistema web para programação, reserva e cálculo de valores das refeições do refeitório / restaurante</p>
+                        <a href="https://funbeca.com.br/refeicao">link</a>
+                    </div>
+                </li>
+                <li>
+                    <div id="srmv-carousel" class="carousel ">
+                        <div class="img-box">
+                            <img id="img1" src="assets/img/srmv/1.png">
+                            <img id="img2" src="assets/img/srmv/2.png">
+                            <img id="img3" src="assets/img/srmv/3.png">
+                            <img id="img4" src="assets/img/srmv/4.png">
+                            <img id="img5" src="assets/img/srmv/5.png">
+                            <img id="img6" src="assets/img/srmv/6.png">
+                            <img id="img7" src="assets/img/srmv/7.png">
+                            <img id="img8" src="assets/img/srmv/8.png">
+                        </div>
+                        <a class="prev" onclick="plusSlides(-1, 'srmv-carousel')">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1, 'srmv-carousel')">&#10095;</a>
+                        <div class="carousel-controlers">
+                            <span class="dot" onclick="currentSlide(1, 'srmv-carousel')"></span>
+                            <span class="dot" onclick="currentSlide(2, 'srmv-carousel')"></span>
+                            <span class="dot" onclick="currentSlide(3, 'srmv-carousel')"></span>
+                            <span class="dot" onclick="currentSlide(4, 'srmv-carousel')"></span>
+                            <span class="dot" onclick="currentSlide(5, 'srmv-carousel')"></span>
+                            <span class="dot" onclick="currentSlide(6, 'srmv-carousel')"></span>
+                            <span class="dot" onclick="currentSlide(7, 'srmv-carousel')"></span>
+                            <span class="dot" onclick="currentSlide(8, 'srmv-carousel')"></span>
+                        </div>
+                    </div>
+                    <div class="description">
+                        <p class="title">Sistema de relatórios MV</p>
+                        <p>Um sistema web que realiza consultas no Banco Oracle do ERP Hospitalar da MV Sistemas para imprimir relatórios personalisados</p>
                         <a href="https://funbeca.com.br/refeicao">link</a>
                     </div>
                 </li>
@@ -204,7 +235,7 @@
                     </div>
                     <div class="description">
                         <p class="title">Sistema de Agendamento</p>
-                        <p>Um sistema web em Html5/JavaScript com NodeJs, banco em MySql, utilizando alguns frameworks de back end, como Passport, Express, Ejs, Sequelize</p>
+                        <p>Um sistema web para agendamento de serviços e exames</p>
                         <a href="https://funbeca.com.br/agendamento">link</a>
                     </div>
                 </li> 
@@ -246,6 +277,37 @@
             </ul>
         </div>
     </section>
+    <section id="tools">
+        <div class="container dark">
+            <h3>Algumas ferramentas que utilizo</h3>
+            <ul class="tools">
+                <li class="">
+                    <a href="https://sequelize.org/" target="_blank">
+                        <span>Sequelize</span>
+                        <img src="assets/img/sequelize.png">
+                    </a>
+                </li>
+                <li class="">
+                    <a href="https://expressjs.com/" target="_blank">
+                        <span>Express</span>
+                        <img src="assets/img/express.png">
+                    </a>
+                </li>
+                <li class="">
+                    <a href="https://momentjs.com/" target="_blank">
+                        <span>MomenJs</span>
+                        <img src="assets/img/moment.png">
+                    </a>
+                </li>
+                <li class="">
+                    <a href="https://www.passportjs.org/" target="_blank">
+                        <span>Passport</span>
+                        <img src="assets/img/passport.png">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
     <section id="contact">
         <div class="container mid-dark">
             <h4>Entre em contato</h4>
@@ -269,6 +331,7 @@
         let slideIndex = 1;
         showSlides(slideIndex, 'sa-carousel');
         showSlides(slideIndex, 'srf-carousel');
+        showSlides(slideIndex, 'srmv-carousel');
         showSlides(slideIndex, 'ss-carousel');
 
         // Next/previous controls
