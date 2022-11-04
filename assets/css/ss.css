@@ -93,36 +93,36 @@ body::-webkit-scrollbar-thumb:hover {
 .menu a:hover span, .menu a.active span {
     mix-blend-mode: multiply;
 }
-.menu .sun-anc:hover, .menu .sun-anc.active {
+.menu .sun-anc {
     background-image: url('../img/sun-detail.jpg');   
 }
-.menu .mercury-anc:hover, .menu .mercury-anc.active {
+.menu .mercury-anc {
     background-image: url('../img/mercury.png');    
 }
-.menu .venus-anc:hover, .menu .venus-anc.active {
+.menu .venus-anc {
     background-image: url('../img/venus-detail.jpg');    
 }
-.menu .earth-anc:hover, .menu .earth-anc.active {
+.menu .earth-anc {
     background-image: url('../img/earth.png');    
 }
-.menu .mars-anc:hover, .menu .mars-anc.active {
+.menu .mars-anc {
     background-image: url('../img/mars-detail.jpg');    
 }
-.menu .jupiter-anc:hover, .menu .jupiter-anc.active {
+.menu .jupiter-anc {
     background-image: url('../img/jupiter-detail.jpg');
     background-size: 200px;
 }
-.menu .saturn-anc:hover, .menu .saturn-anc.active {
+.menu .saturn-anc {
     background-image: url('../img/saturn.png'); 
     background-size: 200px;
 }
-.menu .uranus-anc:hover, .menu .uranus-anc.active {
+.menu .uranus-anc {
         background-image: url('../img/uranus.png');
 }
-.menu .neptune-anc:hover, .menu .neptune-anc.active {
+.menu .neptune-anc {
     background-image: url('../img/neptune.png');    
 }
-.menu .pluto-anc:hover, .menu .pluto-anc.active {
+.menu .pluto-anc {
     background-image: url('../img/pluto-detail.jpg');    
 }
 .open-menu {
