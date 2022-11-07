@@ -40,18 +40,22 @@
             })
             window.addEventListener('scroll', ()=> {
                 const deg = scrollY 
-                const target = document.getElementById('about') 
+                const about = document.getElementById('about') 
                 if (deg > 10) {
                     menu.classList.add('slim')
                 } else {
                     menu.classList.remove('slim')
                 }
-                if (target.getBoundingClientRect().top > 110 && window.innerWidth > 960) {
+                if (deg < (about.getBoundingClientRect().top +  window.scrollY) - ( about.offsetHeight / 10 ) && window.innerWidth > 960) {
                     portrait.classList.remove('something')
-                    portrait.style.transform = `translate(0, ${deg * 1.2}px)`
-                    if (target.getBoundingClientRect().top > 60) {
-                        newWidth = parseInt(target.getBoundingClientRect().top) + 300
-                        portrait.style.width = `${newWidth - 100}px`
+                    // portrait.style.top = `${(about.getBoundingClientRect().top +  window.scrollY)}px`
+                    portrait.style.transform = `translate(0, ${deg}px)`
+                    if (deg > (about.getBoundingClientRect().top +  window.scrollY) / 2) {
+                        portrait.style.width = `260px`
+                        portrait.style.right = '100px'
+                    } else { 
+                        portrait.style.width = `460px`
+                        portrait.style.right = '15px'
                     }
                 } else {
                     portrait.classList.add('something')
@@ -146,7 +150,7 @@
                         desenvolvedor web e pai da menina mais linda do mundo. 
                         Tenho mais de doze anos de experiência em suporte TI, 
                         infraestrutura, redes e Servidores Windows, e um ano e meio de Desenvolvimento Web.
-                        Sou formado em Análise de Sistemas e estou em conversão de carreira para 
+                        Sou formado em Análise de Sistemas e estou em transição de carreira para 
                         programação.
                     </p>
                 </div>
@@ -291,7 +295,7 @@
     </section>
     <section id="skills" class="mid-dark">
         <div class="container ">
-            <h3>Algumas tecnologias com as quais trabalho / estudo</h3>
+            <h3>Algumas tecnologias com as quais gosto de trabalhar</h3>
             <ul class="technologies">
                 <li class="html">
                     <span>HTML</span>
@@ -313,10 +317,10 @@
                     <span>nodeJs</span>
                     <img src="assets/img/nodejs.png">
                 </li>
-                <li class="php">
+                <!-- <li class="php">
                     <span>php</span>
                     <img src="assets/img/php.png">
-                </li>
+                </li> -->
                 <li class="sql">
                     <span>sql</span>
                     <img src="assets/img/sql.png">
